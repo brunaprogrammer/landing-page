@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 12px;
+  }
+  
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 72px;
+  }
+  
+  header .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  header ul {
+    display: flex;
+    list-style-type: none;
+  }
+  
+  header ul li {
+    margin: 12px;
+  }
+  
+  header ul li a {
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+    color: #777;
+  }
+  
+  header ul li a:hover {
+    color: #000;
+  }
+  
+  #hero {
+    height: calc(100vH - 72px);
+    display: flex;
+    align-items: center;
+  }
+  
+  #hero div:first-child {
+    width: 60%;
+    padding: 32px 64px 32px 0;
+  }
+  
+  #hero div:last-child {
+    display: flex;
+    justify-content: center;
+    width: 40%;
+  }
+  
+  #hero .title {
+    font-size: 64px;
+    font-weight: 300;
+    margin: 32px 0;
+  }
+  
+  #hero input, #hero button {
+    width: 60%;
+    margin: 12px 0;
+    padding: 16px 8px;
+  }
+  
+  #hero input {
+    border: 1px solid #ccc;
+  }
+  #hero button {
+    border: none;
+    background-color: #78256d;
+    color: white;
+    border-radius: 4px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  
+  #hero .subtitle {
+    font-size: 24px;
+    font-weight: 300;
+    margin: 32px 0;
+  }
+  
+  #hero .banner {
+    width: 90%;
+    height: auto;
+  }
+  
+  #promotions {
+    background: #78256d;
+    padding: 80px 0;
+    color: white;
+  }
+  
+  #promotions .title {
+    font-size: 48px;
+  }
+  
+  @media (max-width: 1440px) {
+    .container {
+      padding: 0 32px;
+    }
+  }
+  
+  /* Tablet */
+  @media (max-width: 1024px) {
+    #hero .title {
+      font-size: 48px;
+    }
+  
+    #hero .subtitle {
+      font-size: 18px;
+    }
+  
+  
+    #hero input, #hero button {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    header ul {
+      display: none;
+    }
+  
+    header {
+      justify-content: center;
+    }
+  
+    #hero {
+      height: auto;
+    }
+    
+    #hero div:first-child {
+      width: 100%;
+      padding: 0;
+      text-align: center;
+    }
+  
+    #hero div:last-child {
+      display: none;
+    }
+    
+    #hero .banner {
+      width: auto;
+      height: 200px;
+    }
+  }
