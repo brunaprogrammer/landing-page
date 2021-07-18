@@ -102,6 +102,103 @@
   #promotions .title {
     font-size: 48px;
   }
+
+ .container > .title{
+    text-align: center;
+ }
+
+ .promotions-container{
+    display: flex;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+ .caixa{
+    width: 350px;
+    height: 602px;
+    box-shadow: 0px 4px 20px 7px #00000012;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.caixa{
+    margin-right: 35px;
+}
+
+.caixa-jogo{
+    width: 350px;
+    height: 417px;
+    background-color: white;
+    border-bottom: 2px solid #78256d;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.caixa-jogo img{
+    padding-top: 36px;
+}
+
+.caixa-preco{
+    width: 350px;
+    height: 185px;
+    background-color: #F5F5F5;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 25px;
+    justify-content: space-evenly;
+    color:#78256d;
+    font-weight: bold;
+}
+
+
+.caixa-preco p:first-of-type{
+    color:#D93C65;
+    font-size: 14px;
+}
+
+.caixa-preco p:last-of-type{
+    color:#D93C65;
+    font-size: 18px;
+    font-weight: 900;
+    text-decoration:line-through;
+}
+
+button{
+    width: 240px;
+    height: 52px;
+    border-radius: 5px;
+    color: white;
+    background-color: #D93C65;
+    font-size: 18px;
+    font-weight: 900;
+    font-family:'Roboto', sans-serif;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}
+
+footer img{
+    height: 45px;
+}
+
+footer{
+    background-color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: black;
+    padding: 20px 0;
+}
+
+footer p{
+    margin-right: 12px;
+}
   
   @media (max-width: 1440px) {
     .container {
