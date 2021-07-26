@@ -70,7 +70,7 @@ function carregarUsuarios (){
 }
 
 function comprar (id){
-  
+  alert("Comprado com sucesso!")
   produtosComprados.push(id);
   localStorage.setItem('produtosComprados', JSON.stringify(produtosComprados));
 }
